@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Problem Set \# 2 Solutions}
+\date{}
+\maketitle
+
+\begin{problem}{1}
+\item a) Wavelength is the distance between peaks, $\lambda = 8m$. $f=\frac{1}{T}=0.5Hz$. $v=f\lambda=4m/s.$
+\item b) We need both Anna's location and Bob's location. Anna sees two other peaks and a trough at Carlos, meaning she is a distance 2.5 wavelengths from Carlos, $r_A=20m$. For Bob, we know the amplitude for both he and Anna at their locations, and we know the amplitude is decreasing with $\frac{1}{\sqrt{r}}$. Setting up the relation for the amplitude, $A_A \sim 1/\sqrt{r_A}=0.08m$ and $A_B \sim 1/\sqrt{r_B}=0.04m$ we can take a ratio $A_A/A_B=2=\sqrt{r_B}/\sqrt{r_A}$. Squaring both sides, and solving for Bob's distance, $r_B= 4r_A=80m$. This is the radial distance for both Anna and Bob, so the minimum separation is when they are colinear and on the same side of Carlos, $r_{min}=r_B-r_A=80m-20m=60m$. The maximum separation is when Bob is again colinear but opposite Anna, with Carlos between them, $r_{max}=r_B+r_A=80m+20m=100m$.
+\item c) Bob is a distance $80m=10\lambda$ from Carlos. When Anna has a peak at her location, there is a trough at Carlos. Since Bob is 10 full wavelengths from Carlos, he will always have the same phase with Carlos, therefore Bob also has a trough.
+\end{problem}
+ 
+\begin{problem}{2}
+\item a) $I_1r_1^2 = I_2r_2^2$ and we know both the intensity at the initial location and the pain threshold intensity at the new location. $r_2 = \sqrt{(0.11W/m^2)(8m)^2/(1 W/m^2)}=2.65m$.
+\item b) Power/Area = Intensity. We can use the starting location, and since we assume no reflections, the area is $4\pi r^2$ and  $P=I_1 4\pi r_1^2=88.4W$.
+\item c) $2m$ closer than (a) means $r_3=2.65m-2m=0.65m$. We desire to be at the pain threshold intensity at this location, $P=I_3(4\pi r_3^2)=1W/m^24\pi(0.65m)^2=5.3W$.
+\end{problem}
+
+
+
+\begin{problem}{3}
+\item a) The only contribution to the total phase difference is from $\Delta \Phi = 2\pi f\Delta t$ because Anna is the same distance from the two speakers and they are in phase. Plugging in, $2\pi f \Delta t=2\pi (550Hz) (2.001s) = 2\pi(1100.55)$. We care about the non-integer part that multiplies $2\pi$ because integer multiples of $2\pi$ are constructive - so examinine $\Delta \Phi = 2\pi(0.55)$. At $0.5$ we would have a total phase of $\pi$ which is destructive interference, so we are slightly away from destructive interference or partially between destructive and constructive.
+\item b) Same as before but now there is an initial phase difference in addition to the difference in start time, $\Delta \Phi = 2\pi f \Delta t + \Delta \phi$. In this case, there is constructive interference so we know $\Delta \Phi = 2\pi n$. Plugging in, $ 2\pi n = 2\pi (550Hz)(18.191s) + \Delta \phi$. We now have $2\pi n = 2\pi (10005.05) + \Delta \phi$, so again we can ignore the integer part, $2\pi(n=0) = 2\pi (0.05) + \Delta \phi$, $\Delta \phi = \phi_0 = -2\pi (0.05)$, If instead we took $2\pi(n=1) = 2\pi(0.05) + \phi_0$, we would have $\phi_0 = 2\pi(0.95)$, which is of course the same location on the wave function, just one cycle apart.
+
+\item c) Now there is no phase difference or time difference, but a path difference contributes to the total phase difference, $\Delta \Phi = \frac{2\pi}{\lambda}\Delta x$. For destructive interference to happen twice, $\Delta\Phi = 3\pi$. Also, $\lambda = v/f = \frac{344m/s}{550Hz}=0.62m$. Solving, $3\pi = \frac{2\pi}{\lambda} \Delta x$, or $\Delta x = 3/2\lambda=0.93m$. This is not the distance Alice walks, but rather the path difference the waves must have to Alice's new location. Call the distance Alice walks from her initial location, $y$, and call the distance from speaker 1 and speaker 2 to Alice, $r_1$ and $r_2$ respectively. There are two right triangles we can use to solve for $r_1$ and $r_2$, viz. $r_1 = \sqrt{(y-1)^2+x^2}$ and $r_2 = \sqrt{(y+1)^2+x^2}$. The difference in path, $\Delta x = r_2-r_1$, is now expressed in terms of the distance Alice walks, $y$. With some careful algebra and a bit of pain, the result is $y=\pm\Delta x \sqrt{\frac{1+x^2 + \frac{1}{2}\Delta x^2}{4-\Delta x^2}}$, where $x=20m$ and $\Delta x=0.94m$ from our above calculation of the path difference. Alice needs to walk $y=10.52m$ to hear destructive interference for the second time.
+
+\item d) For the first destructive interference, $\Delta \Phi = \frac{2\pi}{\lambda}\Delta x + \Delta \phi = \pi = \frac{2\pi f}{v}\Delta x + \frac{\pi}{2}$. We need to calculate the path difference again, but this is much easier than (c) because we start knowing the distance Alice walks, $y=5m$, $\Delta x = r_2 - r_1 = \sqrt{(5m+1m)^2 + (20m)^2} - \sqrt{(5m-1m)^2 + (20m)^2} = 1.48m$. Now we go back to our expression for total phase difference $\Delta \Phi$ and solve for $f = \frac{v}{4\Delta x} = \frac{344 m/s}{4(1.48m)}=58Hz$.
+
+\item e)  We can use $I = 4A^2 cos^2\frac{\Delta \Phi}{2}=4A^2$ for constructive interference. We can interpret this as Alice hearing 4 times whatever she would have heard with just a single speaker, $A^2 = 400W/4\pi r^2_A$ with $r^2_A=(1m)^2+(20m)^2=401m^2$. So, $I_A = 4(400W)/(4\pi 401m^2)=0.32W/m^2$. To get the sound level, $\beta = (10dB) log_{10} \frac{I}{I_0} = 10dB log_{10}(0.32 \times 10^{12})=115dB$. Bob hears $10dB =10dBlog_{10} \frac{I_B}{I_0}$ and all the same arguments above for Alice apply to Bob. However, we can also note the sound level Bob hears is much less than Alice, and therefore he is hardly "right next to her" (this is an error in the numbers given in the problem). The distance for Bob is $r_B=3.5\times10^6m$ which is ~$1/10$ Earth's circumference, so he would no longer be on a line with Alice.
+
+\end{problem}
+
+\begin{problem}{4}
+\item a) 5th and 7th harmonics.
+
+\item b) With two fixed ends, $\lambda_1 = 2L=4m$.
+\item c) Successive harmonics are separated by the fundamental frequency, so $150Hz=2f_1$ and $f_1=75Hz$. Using $v=\lambda f$, $v=(4m)(75Hz)=300m/s$.
+\item d) 6th Harmonic. $\lambda_6=\frac{2L}{6}=0.66m$ and $f_6=(300m/s)/(0.66m)=450hz$
+\item e) From above, $f_1=75Hz$
+\item f) For one fixed and one free end, $\lambda_1=4L$, and the speed remains the same, so the frequency is half or 37.5Hz.
+\end{problem}
+
+\begin{problem}{5}
+\item a) Stationary listener, $f_A=\frac{v}{v-v_B}f_B=1.3kHz$
+\item b) Stationary listener, $f_A=\frac{v}{v+v_B}f_B=0.81kHz$
+\item c) Two Doppler shifts, with a stationary listener first, and then a stationary source. $f_R=\frac{v}{v+v_B}f_B$ and $f_{B'}=\frac{v-v_B}{v}f_R=\frac{v-v_B}{v}\frac{v}{v+v_B}f_B$. Cancelling and plugging in, $f_{B'}=0.62kHz$.
+\item d) There are again two doppler shifts, but this time the first shift is from a moving listener, rather than stationary. $f_{B'}=\frac{v-v_B}{v-v_C}\frac{v+v_C}{v+v_B}f_B$. We are trying to solve for $v_C$ and are given everything else. $v_C=14.8m/s$
+\end{problem}
+
+
+
+%-------------
+%-------------
+\end{document}

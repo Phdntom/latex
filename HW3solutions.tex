@@ -1,0 +1,54 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Problem Set \# 3 Solutions}
+\date{}
+\maketitle
+
+\begin{problem}{1}
+\item This is a double slit setup for radio waves with $d=400m$ and $\lambda = c/f=(3\times 10^8 m/s)/(1500\times 10^3Hz)=200m$. For constructive interference, the $m^{th}$ location is given by $dsin\theta_m=m\lambda$. With $sin\theta_m=\frac{m\lambda}{d}$, it's important to note that the maximum value of $sin\theta=1$ which means we can search for the "last" location via solving for $m$ when $1 = \frac{m\lambda}{d}\xrightarrow{} m=\frac{d}{\lambda} = 400m/200m=2$. This means there are 5 locations at $\theta=0, \pm30, \pm90$. The drawback of this is that there are also 4 "dead zones" where the intensity is 0 due to constructive interference.
+\end{problem}
+ 
+\begin{problem}{2}
+This is a direct application of diffraction via circular aperture where anything that is more detailed (smaller) than the angular size of the central bright spot will not be resolvable. Using $sin\theta_1 = 1.22 \frac{\lambda}{D}=1.22 (10\times10^{-6}m)/(1m)=1.22\times10^{-5}$ and noting that with the small angle approximation, $sin\theta=tan\theta=y/L$, $y=(2.0\times10^{17}m)(1.22\times 10^{-5})=2.44\times10^{12}m$. This is larger than the diameter of the Sun by a factor of over 100.
+\end{problem}
+
+\begin{problem}{3}
+The microscope slides themselves are thick so the "film" in this case is the water between the slides. Therefore the important reflections are 1) from inside the top slide off the water boundary and 2) from inside the water film off the bottom slide. Reflection (1) is going from glass to water and there is no phase inversion, while reflection (2) is going from water to glass and there is a phase inversion. This means the two light waves that are interfering to produce the bright violet line need only travel a distance $\lambda/2$ inside the water layer. As equations, $2t=(m+1/2)\frac{\lambda}{n_w}$ where we also have to account for the wavelength change of the light inside the water using the refractive index. Since this is the first time this happens on the slide, we know that it's the m=0 case. $t=\frac{1}{4}\frac{400nm}{1.33}=75nm$ a distance 1.15mm from the contact side.
+\item a) Adjusting for green light, $t=\frac{1}{4}\frac{550nm}{1.33}=103nm$. Using the constant angle and the tangent, $75nm/1.15mm = 103nm/L \xrightarrow{} L=(103/75)*1.15mm=1.57mm$.
+\item b) We need $3\lambda/2$ wavelengths now, corresponding to the $m=1$ case, $t=\frac{3}{4}\frac{400nm}{1.33}=225nm$. Again using our triangle, $L=(225/75)*1.15mm=3.45mm$.
+\item c) Since air still has a smaller refractive index than the glass, our phase inversions stay the same. However, since the light is now traveling the path difference in air between the slides, we can use the vacuum wavelength of the light rather than having to adjust it for the water.
+
+\end{problem}
+
+
+
+
+
+
+\begin{problem}{4}
+For single slit difffraction, $asin\theta=m\lambda$ gives the dark spots or "fringes". 
+a) The last dark fringe happens when $sin\theta=1 = m\lambda/a$. Solving, $m=a/\lambda=(0.0666\times10^{-3}m)/(585\times10^{-9}m=113.846$, which we truncate at $113$ since rounding up would give a value larger than 1 and an undefined value of the inverse sine. This is to one side of the central max, so we double it to get 226.
+b) Plug this back in to get $\theta$. $sin\theta = 113(585nm)/(0.0666mm)=0.992 \xrightarrow{} \theta=83^\circ$
+\end{problem}
+
+\begin{problem}{5}
+\item a) Consider only interference, $dsin\theta=m\lambda$ gives maxima, so angles up to $sin\theta=\frac{m\lambda}{d}=\frac{m\lambda}{3a}.$
+\item b) For diffraction, $asin\theta=m'\lambda$ are minima. Intensity in diffraction is $I=I_0\left( \frac{sin\alpha}{\alpha}\right)^2$ where $\alpha=\frac{\pi a sin\theta}{\lambda}$. So, let's take m=1 from (a), $\alpha_1=\pi/3$. Similarly, $m=2 \xrightarrow{}\alpha_3=2\pi/3$ and $m=3\xrightarrow{}\alpha_2=\pi$. The interesting thing is this 3rd value because the intensity is zero where interference had a maxima. Wrapping this up, $\alpha=\frac{m\pi }{3}$ due to the slit width being a multiple of the separation. 
+\item c)The intensity will continue to decrease as m increases, since $\alpha$ is in the denominator of the intensity. When m is a multiple of 3 (ie 3, 6, 9...) the intensity vanishes.
+
+\end{problem}
+
+
+
+
+%-------------
+%-------------
+\end{document}

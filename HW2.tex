@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Problem Set \# 2}
+\date{}
+\maketitle
+
+\begin{problem}{1}
+Anna, Bob, and Carlos are all in a large but shallow swimming pool. Roughly in the middle of the pool, Carlos decides to hop up and down, completing one jump every 2 seconds. At Anna's location, she measures the amplitude of the waves to be $0.08m$ and measures the distance between peaks as $8m$. At his own location, Bob measures the amplitude to be $0.04m$. Make use of our approximate solution for the 2D wave equation in polar coordinates,
+\begin{align}
+f(r, t) = \frac{A}{\sqrt{r}} cos (kr - \omega t + \phi). \nonumber
+\end{align}
+
+\item a) Determine the wavelength, frequency and wave speed of the ripples.
+\item b) Anna further notices that every time the ripples are peaked at her position, there are two other peaks between her and Carlos, and there is a trough at Carlos' location. Determine the farthest possible and shortest possible distances between Anna and Bob.
+\item c) When there is a peak at Anna's location, is there a peak, a trough, or something in-between at Bob's location?
+\end{problem}
+ 
+\begin{problem}{2}
+You are investigating the power output of a speaker as a safety measure for an outdoor concert. You decide to treat the speaker as a point source that generates spherically symmetric waves. The venue is quite large so assume reflections don't play a significant role in your analysis.
+\item a) When you are 8m from the speaker, you measure the intensity to be $0.11W/m^2$. A commonly accepted threshold for audible intensity to cause pain is $1.0W/m^2$. How much closer can you get to the speaker before you feel pain?
+\item b) On average, how much power is the speaker generating?
+\item c) You realize the closest audience members will be 2m closer to the speaker than however close you got in (a) when you experienced pain. You decide to decrease the power supplied by the speaker so the closest audience members avoid pain. What should you adjust the power of the speaker to be?
+\end{problem}
+
+
+
+\begin{problem}{3} Too hard as is.
+\item
+Two stationary speakers (call them speaker 1 and speaker 2) are a distance $d=2m$ apart. The sound produced is $550Hz$ and both speakers have an average power of $400W$. Assume air temperature is $20^\circ C$. Alice stands equidistant from each speaker but a perpendicular distance $x=20m$ to the right.
+\item a) Suppose the speakers have the same initial phase, $\phi_0$, but speaker 1 is turned on $2.001s$ before speaker 2. What kind of interference will Alice observe?
+\item b) Again suppose speaker 1 is turned on first, this time $18.191s$ before speaker 2. Additionally, the bottom speaker begins with a different initial phase, $\phi_1$. If Alice observes constructive interference at her location, what is the initial phase difference, $\phi_1-\phi_0=\Delta \phi$?
+\item c) Now suppose both speakers are turned on at the same time with the same initial phase. Alice walks parallel the two speakers from her initial location. How far must Alice walk until she observes destructive interference for the second time?
+\item d) Someone changes the speaker settings and there is a new but unknown frequency. In addition, speaker 2 begins a quarter cycle ahead of speaker 1. Alice goes back to her initial location and again walks parallel the two speakers. Alice hears destructive interference after walking 5m. What is the new frequency?
+\item e) If the waves constructively interfere at Alice's initial location, what sound level will she hear? Bob shows up and hears $10dB$ while standing directly to the right of Alice. How far is he from Alice?
+
+\end{problem}
+
+\begin{problem}{4}
+A string of length $2m$ with both ends fixed is plucked by some curious students. The observe two different standing waves, the first with 6 nodes, and the second with 4 nodes. The frequency of the first is $150Hz$ higher than the second.
+\item a) Which harmonics are the two standing waves?
+\item b) What is the wavelength of the first harmonic?
+\item c) What is the speed of the waves on the string?
+\item d) What is the frequency of the harmonic between the two you created?
+\item e) You want to use this string as part of a musical instrument. What frequency would you hear from the fundamental produced on this string?
+\item f) If one of the ends is made free rather than fixed, what is the frequency of the first harmonic?
+\end{problem}
+
+\begin{problem}{5}
+Bob is on a train traveling at $80m/s$. His friend Alice is on a train platform as Bob approaches. Bob sends continuous signal in the form of a $1kHz$ sound wave.
+\item a) What frequency will Alice measure as Bob approaches the platform?
+\item b) As Bob passes by and moves away from the platform, what frequency does Alice now measure?
+\item c) As Bob moves away from the platform, some of the sound waves bounce off the platform and return to him. What frequency does Bob measure for the returning signal?
+\item d) Another train is traveling next to Bob but moving more slowly at constant speed. Some of the sound reflects off of the other train and returns to Bob in the form of a $0.68kHz$ signal. How fast is the other train moving?
+\end{problem}
+
+
+
+%-------------
+%-------------
+\end{document}
