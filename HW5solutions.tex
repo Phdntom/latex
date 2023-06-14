@@ -1,0 +1,93 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Problem Set \# 5 Solutions}
+\date{}
+\author{}
+\maketitle
+
+\begin{problem}{1} Spherical Reflectors\
+\item Concave - far from spoon:\\
+Reflection is inverted when object outside focal length. This can be seen from a principal ray diagram which also reveals this is a real image, on the outgoing side.
+\item Concave - near spoon:\\
+Reflection is upright when inside the focal length. Again the principal ray diagram shows all, including that this is a virtual image.
+\item Convex - anywhere:\\
+Reflection is upright for all locations of object. As discussed, convex mirrors, like diverging lenses don't change behavior based on the object location. The principal ray diagram puts the image opposite the outgoing side and keeps it upright.
+\item To see all the principal ray diagrams for these different scenarios, refer to LibreText 4.3 on Spherical Reflectors.
+\end{problem}
+
+\begin{problem}{2} Thin Lenses\\
+Masking a lens lowers the overall amount of light that can pass through it. Thinking back to our many discussions of light as a wave, we know that the overall intensity depends on the amount of light arriving at a particular location. You may wonder why we are not concerned with any interference effects from phase differences. We are not concerned with that here because light in this case is a collection of many wavelengths and many phases. As such, the light waves coming off an object are not prepared cleanly enough to produce noticeable interference effects. In conclusion, with half the light "blocked", the image should be roughly half as intense as with the lens unmasked.
+\end{problem}
+
+\begin{problem}{3} Plane Reflectors\\
+If the object is 28m from the mirror, then the image is 28m from the mirror (on the opposite side). This creates two similar triangles: the first one is from your eye to the top and bottom of the mirror and the second is from your eye to the top and bottom of the tree's image. Calling the shared angle $\alpha$, we have $tan\alpha = \frac{h_{mirror}}{x}=\frac{h_{tree}}{d+x}$ where $x$ is the distance you hold the mirror from your eye and $d$ is the already known image distance. Plugging in $\frac{4cm}{35cm}=\frac{h_{tree}}{28.35m}$ and $h_{tree}=3.24m$
+
+\end{problem}
+
+\begin{problem}{4} Spherical Reflectors\\
+We will use $\frac{1}{S} + \frac{1}{S'} = \frac{2}{R}=\frac{1}{f}$. Let's get the sign conventions of a few things straight: the object distance is positive, the image distance negative, and the radius of curvature and associated focal length are negative. Be careful because this is a mirror, so the outgoing side is the same as the incoming side. Anything "behind" the mirror will have a negative sign. Since this image is known to be opposite the outgoing side, this is a \textbf{virtual image}.
+\item To find the coin's location, we can plug in the known values: $\frac{1}{S} + \frac{1}{-6cm} = \frac{2}{-18cm}$, solving to get $S=18cm$.
+\item To get the size and orientation, we need the magnification, $M=y'/y= -S'/S$. We have all this information so $M=-\frac{-6cm}{18cm}=\frac{1}{3}$. Given the sign is positive, this \textbf{image is upright}. Given the coin is $1.5cm$ tall, the image is $0.5cm$ tall.
+\end{problem}
+
+\begin{problem}{5} Spherical Refractors\\
+For spherical refraction, we derived $\frac{n_2-n_1}{R} = \frac{n_1}{S} + \frac{n_2}{S'}$, noting that this relationship assumes the object is in the medium with index $n_1$.
+\item a) The fish is inside the bowl, meaning water is the object medium with $n_1=1.33$ leaving $n_2=1$ for air. The object sits next to a concave refractor and so $R$ is negative (center inside the bowl) as the outgoing side/light is external the fish bowl. Our equation becomes $\frac{1-1.33}{-14cm} = \frac{1.33}{14cm} + \frac{1}{S'}$. Solving for image distance, $S'=-14cm$, meaning it's not on the outgoing side and actually sits right at the center of bowl where the fish (the object) is. The magnification, $M = -\frac{n_1}{n_2}\frac{S'}{S}$, becomes $-\frac{1.33}{1}\frac{-14cm}{14cm}=1.33$.
+\item b) We showed that the focal length is $f=\frac{n_2}{n_2-n_1}R$ (we derived this from the above equation for an infinite object distance). Plugging in, $f=\frac{1}{1-1.33}(-14cm)=42cm$. The focal length is outside the fishbowl completely and the fish is safe from being blinded anywhere in the bowl.
+\end{problem}
+
+\begin{problem}{6} Thin Lenses\\
+Given $f=14cm$ and $\frac{1}{S}+\frac{1}{S'}=\frac{1}{f}$ and $M=\frac{-S'}{S}$ we consider the two cases.
+
+\item Case 1 - outside focus
+\item a) When $S=18cm$, $\frac{1}{18cm}+\frac{1}{S'}=\frac{1}{14cm}$ giving $S'=63cm$
+\item b) and $M=-\frac{63cm}{18cm}=-3.5$.
+\item c) This image is real since it forms on the side of outgoing light
+\item d) and it is inverted from the negative magnification.
+\item See LibreText Figure 4.5.3 for an exact Principal Ray Diagram for this case.
+
+\item Case 2 - inside focus
+\item a) When $S=7cm$, $\frac{1}{7cm}+\frac{1}{S'}=\frac{1}{14cm}$ giving $S'=-14cm$
+\item b) and $M=-\frac{-14cm}{7cm}=2$.
+\item c) This image is virtual since it forms opposite the side of outgoing light
+\item d) and it is upright from the positive magnification.
+\item See LibreText Figure 4.5.4 for an exact Principal Ray Diagram for this case.
+\end{problem}
+
+\begin{problem}{7} Thin Lenses\\
+$\frac{1}{S}+\frac{1}{S'}=\frac{1}{f}$ applies to both the initial configuration and the new configuration.
+\item
+Initially, $\frac{1}{S}+\frac{1}{S'}=\frac{1}{f}$, with the image distance, $S'=30cm$, known.
+\item
+After rearranging, $\frac{1}{S+4cm}+\frac{1}{S'-8cm}=\frac{1}{f}$ where we have phrased the new object and image distances in terms of the initial distances. The lens moved 4cm to the right, away from the object, so the new object distance is $S_{new}=S+4cm$. The lens moved 4cm closer to the screen, and then the screen was moved another 4cm to the left to form the image on the screen again. This means the image distance is 8cm closer to the lens than it was initially, or $S'_{new}=S'-8cm$.
+\item The lens' focal length never changes, so we can equate the above equations and solve for $S$ and then go back to solve for $f$. Somewhere in the mess of algebra there is a quadratic equation that gives two results, one result is $S=16.2757cm$ (the correct one) while the other is a negative number. We know to choose the positive solution because a negative object distance would put the object on the right, and we know from the problem statement the object is to the left. Finally, we can plug $S=16.2757$ back in and get the focal length, $f=10.55cm$.
+\end{problem}
+
+\begin{problem}{8} Lens Maker's Equation\\
+The Len's Maker's Equation gives the focus in terms of the two radii of curvature, $\frac{1}{f} = (n-1) \left(\frac{1}{R_1} - \frac{1}{R_2}\right)$ and we can just plug in directly to find $f=25cm$. We have duplicate lenses and this is a multiple lens system where the image of the first lens will be the object of the second lens.
+\item (1) $\frac{1}{25}=\frac{1}{30cm}+\frac{1}{S'_1}$ which gives, $S'_1=150cm$.
+\item We know the lenses are separated by 50cm, so the image of the first lens forms 100cm to the right of the second lens, and therefore has a negative sign, as it's opposite the side of the incoming light.
+\item (2) $\frac{1}{25}=\frac{1}{-100cm}+\frac{1}{S'_2}$ giving $S'_2=20cm$ as the final image distance.
+\item Magnification, $M=M_1M_2=(-S'_1/S_1)(-S'_2/S_2)=(30/150)(-100/20)=-1$, so the size is $8mm$ and the image is now inverted.
+\end{problem}
+
+
+
+
+
+
+
+
+
+
+%-------------
+%-------------
+\end{document}
