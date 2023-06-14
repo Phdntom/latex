@@ -1,0 +1,65 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Problem Set \# 8 Solutions}
+ \author{}
+\date{}
+\maketitle
+
+\begin{problem}{1} Pressure / Pascal's Law\\
+\item a) $\Delta P = \rho g h = (1000kg/m^3)(3.71m/s^2)(0.5\times 10^3m)=1.86 \times 10^6 Pa$
+\item b) $\Delta P = \rho g h \xrightarrow[]{} h = 1.86\times 10^6Pa/(1000kg/m^3 9.81 m/s^2)=189m$ (Note this is the ratio of $g_{mars}/g_{earth} 0.5km$)
+\end{problem}
+
+\begin{problem}{2} Buoyancy / Archimedes' Law\\
+\item 
+$\sum F_y = 0=F_b - mg$; where $F_b = \rho_{water}V_{disp}g$ and $m=\rho_{ice}V_{ice}+m_{human}$, ie the total mass.
+\item Putting what we have together then
+\item $\rho_{water}V_{disp}g = \rho_{ice}V_{ice}g+m_{human}g$.
+\item In the case where the human stands on the ice and doesn't get wet, the ice is just submerged so $V_{disp} = V_{ice}$ and $g$ cancels out.
+\item $V_{ice} = m_{human}/(\rho_w - \rho_i) = (60kg)/(1000kg/m^3 - 920kg/m^3)=0.75m^3$.
+\item There are a few values for density of ice and density of water so depending on what you used, there is a small range of answers.
+\end{problem}
+
+\begin{problem}{3} Fluid Flow / Continuity Equation\\
+
+\item $v_1A_1 = v_2A_2 \xrightarrow[]{} v_2 = v_1 \frac{A_1}{A_2}$, but we use the fact that $A_2$ is the sum of 20 areas corresponding to each circular opening of the shower head.
+
+\item $v_2 = (3m/s)\frac{(8mm)^2}{20(1mm)^2}=9.6m/s$
+
+\end{problem}
+
+\begin{problem}{4} Energy / Bernoulli's Equation\\
+\item 
+$P_1 + \frac{1}{2}\rho v_1^2 + \rho g h_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g h_2$
+\item Let's consider the "ground" as point 1, and the 15m height as point 2. At point 1, we don't know the gauge pressure from the main, but we can set $v_1 = 0$ and $h_1=0$ and we know we will have 1atm at ground level as well. At point 2, we have reached our desired height, and all of the kinetic energy we had during the ascent has been converted to potential energy, and we still have 1atm from the atmosphere.
+\item $P_{main} + P_{atm}= P_{atm} + \rho g h_2$
+\item $P_{main} = \rho g h_2 = (1000kg/m^3)(9.81m/s^2)(15m) = 1.472\times 10^5Pa$
+
+\item 
+If instead of considering $P_{main}$ directly as the gauge pressure we could have found the absolute pressure,
+\item $P_{abs}= P_{atm} + \rho g h_2 = 1.01\times 10^5Pa + (1000kg/m^3)(9.81m/s^2)(15m)=2.482\times 10^5Pa$
+\item and then subtracted off the 1atm to get the gauge pressure.
+
+\end{problem}
+
+\begin{problem}{5} Bernoulli + Continuity\\
+\item Bernoulli's equation becomes $P_1 + \frac{1}{2}\rho v_1^2 = P_2 + \frac{1}{2}\rho v_2^2$ where we have assumed the two points are at the same height, ie $h_1 = h_2$. But we don't have the velocity of the fluid. This is where we can use the provided volume flow rate and the continuity equation:
+\item $v_1A_1 = v_2A_2 = 7200cm^3/s$ and we have the pipe radii so $A_1 = \pi (4cm)^2$ and $A_2 = \pi (2cm)^2$
+\item $v_1 = 143cm/s = 1.43m/s$ and $v_2 = 572 cm/s = 5.72m/s $.
+\item Returning to energy conservation now, $P_2 = P_1 + \frac{1}{2}\rho v_1^2 - \frac{1}{2}\rho v_2^2$. The rest is plugging in many numbers, and the result is $P_2 = 2.246 \times 10^5 Pa$.
+
+This should provide some intuition, viz. when the fluid is constricted, it speeds up (via continuity) and the pressure decreases because more of the energy is in the kinetic energy term (via energy conservation).
+\end{problem}
+
+
+%-------------
+%-------------
+\end{document}
