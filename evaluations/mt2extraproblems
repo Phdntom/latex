@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Practice Problems }
+\date{}
+\maketitle
+
+\begin{problem}{1}
+You have a cheap double-slit that has been giving strange results. You notice that there are not clean "zero" intensity minima between the maxima in the interference pattern. You conclude one of the slits is bigger than the other and aim to find out how much bigger. On a screen, you notice the location of the first order maximum is where you expect, in the center of the screen when the phase difference is zero. The first order max also seems to be as you would expect, with a phase difference of $2\pi$.
+\item a) Exactly between the zero and first order maxima, you measure the intensity to be $1/9$ of $I_0$, where $I_0$ is the usual definition of completely constructive interference and maximum intensity. What is the phase difference where you measured this reduced intensity? How much bigger is the second slit than the first?
+
+\item b) Calling the amplitude of the smaller slit $A$, what is the total amplitude at a point where the phase difference is $\pi/4$? You may find a phasor diagram helpful.
+
+\item c) What is the ratio of the intensity at the point in part (b) to the intensity at the central maximum? 
+    
+\end{problem}
+
+\begin{problem}{2}
+You have a 2cm grating with 1000 slits. You shine two distinct wavelengths of light on the grating and observe a pattern on a screen $L=2m$ away. If the second wavelength is $1\%$ larger than the first, what is the distance on a screen between the two second order maxima? Practically speaking, is there a concern that each wavelength's brightspots would overlap on the screen somewhere other than the central maximum?
+\end{problem}
+
+\begin{problem}{3}
+Light traveling in water is incident on an flat piece of glass. The wavelength in water is $726nm$ and it's wavelength in glass is $544nm$. If the ray in water makes an angle of $42^\circ$ with the normal of the interface, what is the angle of the refracted ray?
+\end{problem}
+
+\begin{problem}{4}
+We define the index of refraction of a material for sound waves to be the ratio of the speed of sound in air to the speed of sound in the material. Snell's law then can be applied to the refraction of sound waves. Speed of sound in water is $1320 m/s$.
+\item a) Which medium has the higher index of refraction for sound?
+\item b) What is the critical angle for a sound wave incident on the surface between air and water?
+\item c) For total internal reflection to occur, does the sound have to be traveling in air or water?
+\end{problem}
+
+\begin{problem}{5}
+A light bulb is 3.00m from a wall. You are to use a concave mirror to project an image of the bulb on the wall, with the image 2.25 times the size of object. How far should the mirror be from the wall? What should its radius of curvature be?
+\end{problem}
+
+\begin{problem}{6}
+A candle is at the center of curvature of a concave mirror, whose focal length is 10.0cm. At a distance $85cm$ from the other side of the candle is a converging lens with focal length $32.0cm$. You view the candle through the lens and see two iamges. The first image is formed from light coming directly from the candle. The second image is formed from light that first travels to the mirror and then back to the lens.
+\item a) What is the location of each image seen through the lens?
+\item b) For each image, is it real or virtual?
+\item c) For each image, is it upright or inverted?
+\end{problem}
+
+\begin{problem}{7}
+A window is made of glass 5.20mm thick with dimensions 1.4m x 2.5m. On a cold winter day, the outside temperature is $-20^\circ C$, while the inside is $19.5^\circ C$.
+\item a) At what rate is heat being lost through the window by conduction?
+\item b) If you covered the window with a sheet of paper 0.750mm thick what would be the new rate of heat loss? (Thermal conductivities: $0.05 \frac{W}{mK}$ for  paper and $0.8 \frac{W}{mK}$ for glass)
+\end{problem}
+
+\begin{problem}{8}
+An ice-cube tray contains $0.350kg$ of water at $18^\circ C$. How much heat must be removed in order to barely freeze it?
+\end{problem}
+
+\begin{problem}{9}
+You have $0.250kg$ of water at $75^\circ C$. How many kilograms of ice at $-20.0^\circ C$ must be dropped into the water to have a final temperature of the system be $40.0^\circ C$?
+\end{problem}
+
+
+
+%-------------
+%-------------
+\end{document}
