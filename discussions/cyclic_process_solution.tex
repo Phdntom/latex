@@ -1,0 +1,35 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Discussion Solutions - Cyclic Processes}
+\date{}
+\maketitle
+
+\begin{problem}{1}
+\item a) Picture
+\item b) V const. so $P_i/T_i = P_f/T_f$ gives $P_f = (8/3) 1atm = 2.67atm$.
+\item c) Adiabatic so $P_iV_i^\gamma = const$ gives $V_f=1.8L$. For T, either the ideal gas law can be used or $T_iV_i^{\gamma-1} = const$. They both (of course) give the same value, $T=540K$.
+\item d) $\Delta U = \frac{3}{2}C_v\Delta T$, but they don't have the number of moles so they need to calculate it, $nR=PV/T=0.337J/K$. Step 1: $252.5J$, Step 2: $-131.3J$, Step 3: $-121.2J$. For the cycle, $\Delta U=0$ because it's a closed loop and U is a state variable.
+
+\item e) $W_1 = 0$, $W_2 = -\Delta U_1 = 131.3J$, $W_3 = P\Delta V = (1.01\times 10^5Pa)(1.0\times10^{-3}m^3-1.8\times10^{-3}m^3) = -80.8J$. Total: $W_1+W_2+W_3 = 50.5J$
+\item f) $Q_1 = \Delta U_1 = 252.5J$, $Q_2 = 0$, $Q_3 = \Delta U_3 + W_3 = -121.2J - 80.8J = -202J$, or 202J rejected. Total: 50.5J
+\item g) $e=W_{net}/Q_H = 50.5 / 252.5 = 0.2$ The efficiency is 20\%.
+\end{problem}
+
+
+
+
+
+
+
+
+%-------------
+%-------------
+\end{document}
