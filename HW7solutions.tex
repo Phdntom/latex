@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Problem Set \# 7 Solutions}
+\date{}
+\author{}
+\maketitle
+
+\begin{problem}{1} 
+\item a) $27^\circ C=300K$, There are three modes for translational kinetic energy, each giving $\frac{1}{2}k_BT$, so adding them up gives $\frac{3}{2}k_bT=\frac{3}{2}(1.38\times 10^{-23}J/K)(300K)=6.21\times 10^{-21}J$.
+\item b) First way, 1 mole has $N_A=6.02\times 10^{23}$ particles so we can multiply the answer from one particle in part (a) by Avogadro's number. Second way, work directly with one mole using the gas constant; $KE=\frac{3}{2}nRT=3740J$.
+\item c) We need the mass of diatomic oxygen, $m_{oxygen}=\frac{32 g/mol}{6.02\times 10^23 molecules/mol} = 53.1\times 10^{-27}kg$. Now we set the kinetic energy we got above for 1 molecule, and equate it to the usual expression for KE, viz. $\frac{1}{2}mv^2=\frac{3}{2}k_bT$ and from here we solve for $v=\sqrt{\frac{3k_bT}{m}}=484m/s$. You may be wondering, since this is diatomic oxygen, why are we not accounting for rotational modes. We explicitly worked with translation modes only in part (a) and (b) so the $v_{rms}$ is in fact correct, because that's the speed of translation only.
+\end{problem}
+
+\begin{problem}{2} 
+\item a) $PV=nRT \xrightarrow{} T_{max}= P_{max}V/nR= (100atm)(1.01\times 10^5 Pa/atm)(3.10L)(0.001m^3/1L)/(11mol)(8.314J/molK)=342K$, so the change in temperature is $\Delta T = T_{max} - 296.15K=45.9K$. Note, we had to convert to Kelvin here.
+\item b) Yes, the linear thermal expansion is $\Delta L = \alpha L \Delta T$ but the metal tank has thin walls.  Even a thick walled tank with walls ~$1cm$, the coefficient of expansion for metals is typically $1\times 10^{-5}$ or smaller and the change in size of the tank is negligible.
+\end{problem}
+
+\begin{problem}{3} 
+\item a) PV-diagram
+\item b) There are two processes, the first isobaric and the second adiabatic. By definition, the adiabatic process has $Q=0$ so we focus on the heat of the isobaric process.
+
+For an isobaric process, $Q=nC_p\Delta T$ where $C_p = C_v + R$. We don't know $\Delta T$ from the given information, but we know $\Delta V$ (the volume doubles) and that the pressure is constant so we can use the ideal gas law to get the final temperature. $P=const=nRT_1/V_1=nRT_2/V_2 \xrightarrow[]{} T_2 = T_1 \frac{V_2}{V_1}= 2T_1=2(300K)=600K$.
+
+
+The only missing information is $C_p$, and we get that by finding the number of energy modes and $C_v$. Hydrogen sulfide gas is triatomic with a well defined bend and the bonds are rigid at temperatures in this process. Therefore, we will need three translational d.o.f. and all three rotational d.o.f, making for a total of six modes, each contributing $\frac{1}{2}R$ to $C_v=3R$. Finally then, $C_p = 3R+R=4R$ and $Q=n4R\Delta T=(0.350mol)(4R)(600K-300K)=3492J$.
+
+\item c) Since we already have $Q$, it's tempting to calculate $W$ in both processes and then use $\Delta U = Q - W$, but there is a much faster way. Because $U=nC_vT$ and the system returns to its initial temperature after the adiabatic process, $\Delta U = nC_v \Delta T = 0$.
+
+\item d) Now, since we already have $\Delta U = 0$ and $Q$, we use the power of the 1st law, $W=Q=3492J$.
+\item e) For adiabatic expansion, $TV^{\gamma-1}=const$, so we can relate the starting and ending states along the adiabat via $T_2V_2^{\gamma-1}=T_3V_3^{\gamma -1}$. Solving for the final volume $V_3=V_2\left(\frac{T_2}{T_3}\right)^{\frac{1}{\gamma-1}}$ where $\gamma = \frac{C_p}{C_v}=4/3$. Finally, $V_3=\left(\frac{600K}{300K}\right)^3(14.0\times10^{-3}m^3)=112 cm^3$ where we used information from previous parts and the volume doubling.
+\end{problem}
+
+\begin{problem}{4}
+\item a) Another diagram with many values
+\item Point 1: $P = 2atm$, $V=4.0L$, $T=300K$; using ideal gas law: $n=0.324mol$
+\item Point 2: $P = 2atm$, $V=6.0L$, $T=450K$; the temperature increase is given as 50\% and with constant pressure, the ideal gas law requires the volume must increase by the same amount, viz. $V_2/V_1=T_2/T_1$.
+\item Point 3: $V=6.0L$, $T=250K$, $P=1.11atm$; isochoric constant volume so no change in V, ideal gas law says that if T goes down, P must go down as well by the same ratio, viz. $T_2/T_1 = P_2/P_1$.
+\item Point 4: $V=4.0L$, $T=250K$, $P=1.66atm$; isothermal constant temperature  so no change in T, ideal gas law says that if V goes down, P must go up to compensate.
+
+\item b) Q and W in each process (between the points).
+\item (i) $Q=nC_p\Delta T=n(7/2 R)(150K)=1414J$. Using $\Delta U = Q - W$ and $U=nC_vT$ along with $C_p = C_v + R$ gives $W=nR\Delta T=nR(150K)=404J$. NOTE: Q is positive; W is Positive
+\item (ii) $Q=nC_v\Delta T=n(5/2R)(-200K)=-1346J$ and $W=0$. NOTE: Q is negative.
+\item (iii) $\Delta U = nC_v\Delta T = 0$ so $Q=W=\int_{V_i}^{V_f}PdV=nRTln(V_f/V_i)=nR(250K)ln(2/3)=-273J$. NOTE: W and Q are negative.
+\item (iv) $Q=nC_v\Delta T=n(5/2R)(50K)=336J$ and $W=0$. NOTE: Q is positive.
+
+\item c) $W_{net} = W_i + W_{ii} + W_{iii} + W_{iv}$ and $W_{ii}=W_{iv}=0$. $W_i=nR(150K)=404J$ and $W_{iii}=nR(250K)ln(2/3)=-273J$ so finally the net work is $130J$
+\item d) $e = \frac{W_{net}}{Q_H}$ so we need $Q_H=Q_i + Q_{iv}= n(7/2 R)(150K)+n(5/2R)(50K)=1750.9J$. Using the $W_{net}$ from before, $e=185.6/1750.9=7.5\%$.
+\item e) A carnot engine has efficiency $e=1-T_C/T_H=1-250K/450K=0.44=44\%$.
+
+\end{problem}
+
+\begin{problem}{5}
+\item a) $\Delta S = \int \frac{1}{T} dQ=\frac{1}{T} Q$ because the phase change (melting of ice) happens at a constant temperature. When ice melts, there is a latent heat only, $Q=mL_f$, so $\Delta S=\frac{1}{273.15K} (0.35kg)(3.34\times 10^5 J/K)=428J/K.$
+\item b) same setup as part (a) except the temperature of the heat reservoir is different, viz. $T = 25+273.15=298.15K$ and the heat is leaving the reservoir so it's negative. So $\Delta S=\frac{1}{298.15K} (0.35kg)(-3.34\times 10^5 J/K)=-392J/K.$
+\item c) The total change is just the sum, $428J/K + -392J/K=36J/K$
+
+
+
+\end{problem}
+
+
+
+
+%-------------
+%-------------
+\end{document}
