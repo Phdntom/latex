@@ -1,0 +1,50 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Problem Set \# 6}
+\date{}
+\maketitle
+
+\begin{problem}{1} Thermal Expansion\\
+A U.S. penny has a diameter of 1.90cm at $20^\circ C$. The coin is made of a metal alloy (mostly zinc) with a coefficient of linear expansion $2.6 \times 10^{-5}K^{-1}.$ What would its diameter be on a hot day in Death Valley at $48^\circ C$? And what about in cold mountains in Greenland at $-53^\circ C$?
+\end{problem}
+
+\begin{problem}{2} Heat Capacity\\
+A lab tech drops a $0.0850kg$ sample of an unknown solid material at $100^\circ C$ into a calorimeter. The calorimeter is initially at $19.0^\circ C$ and made of $0.015kg$ of copper and contains $0.200kg$ of water. The final temperature is measured to be $26.1^\circ C$. What is the specific heat of the sample? (Hint: You will need to lookup some values for copper and water.)
+
+\end{problem}
+
+\begin{problem}{3} Temperature Dependent Molar Heat Capacity\\
+At very low temperatures the molar heat capacity of rock salt varies with the temperature according to \textbf{Debye's $T^3$ Law}, given as $C=k\frac{T^3}{\Theta^3}$ where $k=1940 \frac{J}{mol K}$ and $\Theta=281K$.
+\item a) How much heat is required to raise the temperature of 1.5mol of rock salt from 10.0K to 40.0K? (Hint: You will need to use the differential form of molar heat capacity: $dQ=nCdT$ where $n$ is the number of moles and $C$ is the molar heat capacity given.)
+\item b) What is the average molar heat capacity in this range?
+\item c) What is the true molar heat capacity at 40.0K?
+\end{problem}
+
+\begin{problem}{4} Heat Capacity and Phase Changes\\
+A Styrofoam bucket of negligible mass contains 1.75kg of water and 0.450kg of ice. More ice from a refrigerator at $-15^\circ C$ is added to the mixture in the bucket. When thermal equilibrium is reached, the total mass of ice is 0.868kg. Assuming no heat was lost to surroundings, what mass of ice was added?
+\end{problem}
+
+\begin{problem}{5} Heat Transfer and Phase Changes\\
+One end of an insulated metal rod is maintained at $100^\circ C$ and the other end at $0^\circ C$ by an ice/water mixture. The rod is $60.0cm$ long and has a cross-sectional area of $1.25 cm^2$. The heat conducted by the rod melts 8.50g of ice in 10min. What is the thermal conductivity k of the metal?
+\end{problem}
+
+\begin{problem}{6} Heat Transfer\\
+A house has an exterior wall with a layer of wood 3.0cm thick on the outside and a layer of Styrofoam insulation 2.2cm thick on the inside. The thermal conductivity of the siding is $0.080\frac{W}{mK}$ and for Styrofoam it is $1/8$ that of siding. The interior surface temperature is $19.0^\circ C$ and the exterior surface temperature is $-10.0^\circ C$.
+\item a) What is the temperature at the plane where the wood and Styrofoam meet?
+\item b) What is the rate of heat flow per square meter through this wall?
+
+\end{problem}
+
+
+
+%-------------
+%-------------
+\end{document}
