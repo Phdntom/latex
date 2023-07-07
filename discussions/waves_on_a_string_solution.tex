@@ -1,0 +1,38 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Discussion - Waves on a String Notes}
+\date{}
+\maketitle
+
+\begin{problem}{1}
+
+\item (a) Any sketch resembling a bell curve will suffice.
+\item (b) Need 1st and 2nd derivatives:$\frac{\partial y}{\partial x} = (0.05) \frac{-2x}{(1+x^2)^2}$ and $\frac{\partial^2y}{\partial x^2}=\frac{(-2)(1+x^2)^2 +(2x)(2)(1+x^2)(2x)}{(1+x^2)^4}$. Setting the 2nd derivative to zero, $-2(1+x^2) + 8x^2=0$ and $x=\pm \frac{1}{\sqrt{3}}$
+\item (c) If the spatial 2nd derivative is zero, so is the temporal 2nd derivative.
+\item (d) The middle is the max height. The velocity will be max where its derivative (the acceleration) is zero, which are the points of inflection from part (b).
+\item (e) $y(x, t)=(0.05m)\frac{1}{1+(x-3t)^2}$.
+\item (f) $\frac{\partial y}{ \partial t}=\frac{6(x-3t)}{(1+(x-3t)^2)^2}$.
+\item (g) Setting (f) to zero, $x=3t$ is a solution. This corresponds to the top of the pulse which is always a maximum as the wave travels.
+\item (h) $x=\pm \frac{1}{\sqrt{3}}+3t$. The answer from part (d) is modified by the propagation of the wave. The points of inflection are where $v_y$ is maximum, and the POI moves to the right just like all other parts of the wave.
+
+
+\end{problem}
+
+
+
+
+
+
+
+
+%-------------
+%-------------
+\end{document}
