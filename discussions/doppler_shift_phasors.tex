@@ -1,0 +1,34 @@
+\documentclass[10pt]{article}
+ \usepackage[margin=0.5in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+  
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+%---------------
+%---------------
+ \title{Discussion Doppler Shift \& Phasor Math}
+ \author{}
+\date{}
+\maketitle
+
+\begin{problem}{1}
+You and a friend are stranded on a small boat in a large bay -- motor is dead. Worse, it's foggy so you can't see anything. Your friend turns on his distress signal: a 90Hz orn. Soon, you hear a reflection of your distress horn, obviously from the bow of a large approaching ship. However, you detect a beat frequency of 2Hz between your horn and the reflection. You're worried, because you judge the "rescue ship" is moving faster than 5m/s. If it is, it won't be able to stop before hitting and capsizing your boat. Your friend says "not to worry". Who is right?
+\end{problem}
+
+\begin{problem}{2}
+Given $y_1(t) = \sqrt{3} cos(\omega t + \pi/6)$ and $y_2(t)= 1 cos(\omega t - \pi/3)$.
+\item a) What is the phase difference between these two functions?
+\item b) As you know, cosine and sine are the same shape, just shifted, but if you add two sinusoidal functions of the same frequency, no matter what their amplitudes or phase relationship, it's the same shape. Proving this in general is not too hard, but a specific example is more useful. Add the given functions, then using $cos(A \pm B) = cosAcosB \mp sinAsinB$, show that the result is in fact a cosine function.
+\item c) Add the following vectors, $A=\sqrt{3}$ at $30^\circ$ and $B=1$ at $-60^\circ$.
+\item d) Comment on the results in (b) and (c).
+\end{problem}
+
+
+
+
+
+%-------------
+%-------------
+\end{document}
